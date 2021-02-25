@@ -4,11 +4,26 @@ import Button from "../../Components/Button"
 
 const Home = ({navigation}) =>{
     return (
+        
         <View style={styles.container}>
+            <Text style={styles.titulo}>
+                SYMPLY
+            </Text>
+
             <View>
                 <Button text="Listas Pendientes"/>
             </View>
+
+            <View>
+                <Button text="Historial"/>
+            </View>
+
+            <View>
+                <Button text="Recordatorios"/>  
+            </View>
+ 
         </View>
+        
     )
 }
 
@@ -20,6 +35,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#6C5B7B",
     }
+
 })
 
 export default Home

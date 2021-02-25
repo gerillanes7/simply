@@ -15,15 +15,17 @@ const Button = ({text}) => {
 
 const styles = StyleSheet.create({
     button:{
-        backgroundColor: "#ffffff",
+        backgroundColor: "#F8B195",
         width: "80%",
         padding: "3%",
         textAlign: "center",
         borderRadius:8,
-        marginLeft:"10%"
+        marginLeft:"10%",
+        marginBottom: "5%",
     },
     titulo:{
         fontSize: 24,
+        color: "#ffffff"
     }
 })
 
