@@ -2,7 +2,7 @@ import {View, Text, StyleSheet} from "react-native"
 import React from "react"
 import Button from "../../Components/Button"
 
-const Home = () =>{
+const Home = ({navigation}) =>{
     return (
         <View style={styles.container}>
             <View>
