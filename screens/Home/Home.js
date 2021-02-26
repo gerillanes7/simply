@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
     titulo: {
         fontSize: 74,
         color: "#ffffff",
+        textAlign: "center"
     },
     containerTitulo: {
-        textAlign: "center",
         margin: "5%",
         padding: "5%",
     }
