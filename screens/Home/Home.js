@@ -2,16 +2,18 @@ import {View, Text, StyleSheet} from "react-native"
 import React from "react"
 import Button from "../../Components/Button"
 
-const Home = ({navigation}) =>{
+const Home = (props) =>{
+    const navegar = () => {
+        props.navigation.navigate('Listas')
+    }
     return (
-        
         <View style={styles.container}>
             <Text style={styles.titulo}>
                 SYMPLY
             </Text>
 
             <View>
-                <Button text="Listas Pendientes"/>
+                <Button text="Listas Pendientes" navegar={navegar} />
             </View>
 
             <View>
