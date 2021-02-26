@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from "react-native"
 const Button = ({text, navegar}) => {
     return (
         <View>
-           <TouchableOpacity style={styles.button} onPress={navegar}>
+           <TouchableOpacity style={styles.button} onPress={() => navegar(text)}>
                <Text style={styles.titulo}>
                    {text}
                </Text>

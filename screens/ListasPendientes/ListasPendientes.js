@@ -9,7 +9,9 @@ const ListasPendientes = () => {
                 LISTAS PENDIENTES
             </Text>
             <View style={styles.containerListas}>
-                <Button text='VERDULERIA'/>
+                <View>
+                    <Button text='Agregar'/>
+                </View>
             </View>
         </View>
     )
@@ -24,6 +26,7 @@ const styles = StyleSheet.create({
     },
     titulo: {
         fontSize: 36,
+        textAlign: 'center',
         color: '#FFF'
     },
     containerListas: {

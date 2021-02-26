@@ -3,9 +3,10 @@ import React from "react"
 import Button from "../../Components/Button"
 
 const Home = (props) =>{
-    const navegar = () => {
-        props.navigation.navigate('Listas')
+    const navegar = (text) => {
+        props.navigation.navigate(text)
     }
+    
     return (
         <View style={styles.container}>
             <View style={styles.containerTitulo}>
