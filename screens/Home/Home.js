@@ -6,9 +6,11 @@ const Home = () =>{
     return (
         
         <View style={styles.container}>
-            <Text style={styles.titulo}>
-                SYMPLY
-            </Text>
+            <View style={styles.containerTitulo}>
+                <Text style={styles.titulo}>
+                    SIMPLY
+                </Text>
+            </View>
 
             <View>
                 <Button text="Listas Pendientes"/>
@@ -34,8 +36,16 @@ const styles = StyleSheet.create({
         alignContent:"center",
         flex: 1,
         backgroundColor: "#6C5B7B",
+    },
+    titulo: {
+        fontSize: 74,
+        color: "#ffffff",
+    },
+    containerTitulo: {
+        textAlign: "center",
+        margin: "5%",
+        padding: "5%",
     }
-
 })
 
 export default Home
