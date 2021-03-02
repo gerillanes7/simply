@@ -20,11 +20,11 @@ const Home = (props) =>{
             </View>
 
             <View>
-                <Button text="Historial"/>
+                <Button text="Historial" navegar={navegar}/>
             </View>
 
             <View>
-                <Button text="Recordatorios"/>  
+                <Button text="Recordatorios" navegar={navegar} />  
             </View>
  
         </View>
