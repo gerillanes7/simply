@@ -2,10 +2,13 @@ import React from 'react'
 import {View, Text, StyleSheet} from 'react-native'
 import ElementoLista from '../../Components/ElementoLista'
 
-const DetalleLista = () => {
+const DetalleLista = (props) => {
+    
+    console.log(props.route);
+
     return (
         <View style={styles.container}>
-            <ElementoLista title='Verduleria' color='#F8B195'/>
+            <ElementoLista />
         </View>
     )
 }
