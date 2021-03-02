@@ -1,12 +1,13 @@
-import React from "react"
-import {View, Text, StyleSheet, TouchableOpacity} from "react-native"
+import React from 'react'
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 
-const Button = ({text, navegar}) => {
+
+const ElementoLista = ({ title, color, navegarAlDetalle }) => {
     return (
         <View>
-           <TouchableOpacity style={styles.button} onPress={() => text ? navegar(text) : null}>
+            <TouchableOpacity style={[styles.button, {backgroundColor: color}]} onPress={() => navegarAlDetalle()}>
                <Text style={styles.titulo}>
-                   {text}
+                   {title}
                </Text>
            </TouchableOpacity>
         </View>
@@ -15,7 +16,6 @@ const Button = ({text, navegar}) => {
 
 const styles = StyleSheet.create({
     button:{
-        backgroundColor: "#F8B195",
         width: "80%",
         padding: "3%",
         textAlign: "center",
@@ -30,6 +30,4 @@ const styles = StyleSheet.create({
     }
 })
 
-
-
-export default Button
+export default ElementoLista
