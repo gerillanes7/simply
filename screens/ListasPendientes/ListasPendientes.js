@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import {View, Text, StyleSheet, SafeAreaView, FlatList, Button, TouchableOpacity} from 'react-native'
+import {View, Text, StyleSheet, SafeAreaView, FlatList} from 'react-native'
 import ElementoLista from '../../Components/ElementoLista'
 import firebase from '../../firebase/firebase'
+import Button from '../../Components/Button'
 
 const ListasPendientes = ({navigation}) => {
 
@@ -11,6 +12,10 @@ const ListasPendientes = ({navigation}) => {
         navigation.navigate('Detalle Lista', {
             nombre: listas
         })
+    }
+
+    const navegar = (text) => {
+        navigation.navigate(text)
     }
 
     const renderItem = ({ item }) => (
@@ -60,12 +65,8 @@ const ListasPendientes = ({navigation}) => {
             <Text style={styles.titulo}>
                 LISTAS PENDIENTES
             </Text>
-            <View style={styles.containerButton}>
-                <TouchableOpacity style={styles.button}>
-                    <Text>
-                        Hola
-                    </Text>
-                </TouchableOpacity>
+            <View>
+                <Button text='Agregar' navegar={navegar}/>
             </View>
             <View style={styles.containerListas}>
                 <SafeAreaView style={styles.container}>
@@ -96,20 +97,7 @@ const styles = StyleSheet.create({
     },
     containerListas: {
         flex: 1,
-    },
-    containerButton: {
-        display: 'flex',
-        alignContent: 'center'
-    },
-    button:{
-        backgroundColor: "#F8B195",
-        width: "30%",
-        padding: "3%",
-        textAlign: "center",
-        borderRadius:190,
-        marginLeft:"10%",
-        marginBottom: "5%",
-    },
+    }
 })
 
 export default ListasPendientes

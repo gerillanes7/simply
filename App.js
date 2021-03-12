@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Historial from "./screens/Historial/Historial";
 import DetalleLista from './screens/DetalleLista/DetalleLista';
+import AgregarLista from './screens/AgregarLista/AgregarLista';
 
 
 const Stack = createStackNavigator();
@@ -17,6 +18,7 @@ export default function App() {
         <Stack.Screen name="Listas Pendientes" component={ListasPendientes} />
         <Stack.Screen name="Historial" component={Historial}/>
         <Stack.Screen name="Detalle Lista" component={DetalleLista} options={{headerShown: false}}/>
+        <Stack.Screen name="Agregar" component={AgregarLista}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
